@@ -84,7 +84,7 @@ var songRows = document.getElementsByClassName('album-view-song-item');
      
      for (var i = 0; i < songRows.length; i++) {
          songRows[i].addEventListener('mouseleave', function(event) {
-             // Revert the content back to the number
+             // Revert the content back to the number.
              // Selects first child element, which is the song-item-number element
              this.children[0].innerHTML = this.children[0].getAttribute('data-song-number');
          });
